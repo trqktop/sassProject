@@ -1,0 +1,41 @@
+$pageMaxWidth: 1440px;
+$pagePadding: 10px;
+
+body {
+    padding: 10px;
+}
+
+%headerFooterStyles-shared {
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+
+.header {
+    @extend %headerFooterStyles-shared;
+}
+
+
+.footer {
+    @extend %headerFooterStyles-shared;
+}
+
+
+/* This CSS will print because %message-shared is extended. */
+// %message-shared {
+//   border: 1px solid #ccc;
+//   padding: 10px;
+//   color: #333;
+//   @extend %equal-heights;
+// }
+
+// // This CSS won't print because %equal-heights is never extended.
+// %equal-heights {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// .body {
+//   @extend %message-shared;
+
+// }

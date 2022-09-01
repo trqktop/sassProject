@@ -1,3 +1,13 @@
+body {
+  padding: 10px;
+}
 
+.footer, .header {
+  width: 100%;
+  background-color: #333;
+  color: white;
+}
+
+/* This CSS will print because %message-shared is extended. */
 
 /*# sourceMappingURL=output.css.map */
